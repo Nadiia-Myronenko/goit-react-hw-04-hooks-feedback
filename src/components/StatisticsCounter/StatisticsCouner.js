@@ -19,10 +19,10 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
         Bad:<CounterValue>{bad}</CounterValue>
       </StatisticsItem>
       <StatisticsItem>
-        Total:<CounterValue>{total()}</CounterValue>
+        Total:<CounterValue>{total}</CounterValue>
       </StatisticsItem>
       <StatisticsItem>
-        Positive feedback:<CounterValue>{positivePercentage()}%</CounterValue>
+        Positive feedback:<CounterValue>{positivePercentage}%</CounterValue>
       </StatisticsItem>
     </StatisticsList>
   );
@@ -31,7 +31,7 @@ Statistics.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
-  total: PropTypes.func,
-  positivePercentage: PropTypes.func,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.number,
 };
 export default Statistics;

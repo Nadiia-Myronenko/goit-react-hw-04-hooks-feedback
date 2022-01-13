@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Button, ButtonWrapper } from "./Buttons.styled";
 
 const Buttons = ({ options, onLeaveFeedback }) => {
+  console.log(options);
   return (
     <ButtonWrapper>
       {options.map((option, index) => (
