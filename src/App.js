@@ -12,6 +12,8 @@ export default function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
+  const feedbackTypes = { good, neutral, bad };
+
   const onLeaveFeedback = (name) => {
     switch (name) {
       case "good":
@@ -41,7 +43,7 @@ export default function App() {
       <MainHeader />
       <Section title={"Please leave feedback"}>
         <Buttons
-          options={["good", "neutral", "bad"]}
+          options={Object.keys(feedbackTypes)}
           onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
