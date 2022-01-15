@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 import Wrapper from "./components/Wrapper/Wrapper.styled";
 import MainHeader from "./components/MainHeader/MainHeader.styled";
